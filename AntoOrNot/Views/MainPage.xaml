@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AntoOrNot.Views.MainPage"
+             Title="{Binding Title}">
+    <ScrollView>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="{Binding ResultText, Mode=TwoWay}" FontSize="30" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            <Image Source="{Binding ImageSource, Mode=TwoWay}"></Image>
+            <Button Text="Take a picture" Command="{Binding TakeAPictureCommand}"></Button>
+            <Button Text="Choose a picture" Command="{Binding ChooseAPictureCommand}"></Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
