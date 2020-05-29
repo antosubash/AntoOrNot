@@ -22,25 +22,22 @@ namespace AntoOrNot.ViewModels
         {
             NavigationService = navigationService;
         }
-
-        public virtual void OnNavigatedFrom(NavigationParameters parameters)
+        
+        public void OnNavigatedFrom(INavigationParameters parameters)
         {
             
         }
 
-        public virtual void OnNavigatedTo(NavigationParameters parameters)
+        public void OnNavigatedTo(INavigationParameters parameters)
         {
-            
         }
 
-        public virtual void OnNavigatingTo(NavigationParameters parameters)
+        public void OnNavigatingTo(INavigationParameters parameters)
         {
-            
         }
 
-        public virtual void Destroy()
+        public void Destroy()
         {
-            
         }
     }
 }
